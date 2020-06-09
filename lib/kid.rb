@@ -5,6 +5,9 @@ class Kid
   extend FancyDance::ClassMethods
   include FancyDance::InstanceMethods
   
+  Kid.metadata
+// returns "This class produces objects that love to dance."
+  
   attr_accessor :name 
   
   def initialize(name)

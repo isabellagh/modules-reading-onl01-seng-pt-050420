@@ -1,8 +1,7 @@
 require_relative './class_methods_module.rb'
 require_relative './dance_module.rb'
 
-Dancer.metadata
-// returns "This class produces objects that love to dance."
+
 
 class Dancer
   extend FancyDance::ClassMethods
@@ -16,6 +15,8 @@ class Dancer
     @name = name
   end
   
-  
-  
 end 
+
+
+Dancer.metadata
+// returns "This class produces objects that love to dance."
